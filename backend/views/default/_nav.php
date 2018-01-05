@@ -1,6 +1,6 @@
 <?php
 
-use worstinme\uikit\Nav;
+use balitrip\uikit\Nav;
 
 ?>
 <div class="uk-panel uk-panel-box">

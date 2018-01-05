@@ -1,10 +1,10 @@
 <?php
 /**
- * @link https://github.com/worstinme/yii2-user
+ * @link https://github.com/balitrip/yii2-user
  * @copyright Copyright (c) 2014 Evgeny Zakirov
  * @license http://opensource.org/licenses/MIT MIT
  */
-namespace worstinme\user;
+namespace balitrip\user;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -12,8 +12,8 @@ use yii\base\InvalidConfigException;
 
 class Module extends \yii\base\Module
 {
-	public $controllerNamespace = 'worstinme\user\controllers';
-	public $profileModel = '\worstinme\user\models\Profile';
+	public $controllerNamespace = 'balitrip\user\controllers';
+	public $profileModel = '\balitrip\user\models\Profile';
 	public $layout = 'clean';
 
 	public function init()
@@ -28,7 +28,7 @@ class Module extends \yii\base\Module
 	    Yii::$app->i18n->translations['user'] = [
 	        'class' => 'yii\i18n\PhpMessageSource',
 	        'sourceLanguage' => 'en-EN',
-	        'basePath' => '@worstinme/user/messages',
+	        'basePath' => '@balitrip/user/messages',
 	    ];
 	}
 

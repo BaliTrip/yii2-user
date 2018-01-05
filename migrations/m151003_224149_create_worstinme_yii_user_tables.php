@@ -3,7 +3,7 @@
 use yii\db\Schema;
 use yii\db\Migration;
 
-class m151003_224149_create_worstinme_yii_user_tables extends Migration
+class m151003_224149_create_balitrip_yii_user_tables extends Migration
 {
     public function up()
     {

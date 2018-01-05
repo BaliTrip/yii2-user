@@ -3,7 +3,7 @@ namespace developeruz\db_rbac\views\user;
 
 use Yii;
 use yii\helpers\Html;
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\ActiveForm;
 
 
 $this->title = Yii::t('user', 'Управление ролями пользователя: ').$user->username;

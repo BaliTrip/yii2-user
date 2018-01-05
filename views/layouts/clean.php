@@ -1,9 +1,9 @@
 <?php
 
 use yii\helpers\Html;
-use worstinme\uikit\Breadcrumbs;
-use worstinme\uikit\Alert;
-use worstinme\user\assets\AppAsset;
+use balitrip\uikit\Breadcrumbs;
+use balitrip\uikit\Alert;
+use balitrip\user\assets\AppAsset;
 
 AppAsset::register($this);  
 

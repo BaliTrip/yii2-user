@@ -1,20 +1,20 @@
 <?php
 /**
- * @link https://github.com/worstinme/yii2-user
+ * @link https://github.com/balitrip/yii2-user
  * @copyright Copyright (c) 2014 Evgeny Zakirov
  * @license http://opensource.org/licenses/MIT MIT
  */
-namespace worstinme\user\controllers;
+namespace balitrip\user\controllers;
 
 use Yii;
-use worstinme\user\models\PasswordResetRequestForm;
-use worstinme\user\models\ResetPasswordForm;
-use worstinme\user\models\ConfirmEmailForm;
-use worstinme\user\models\UserService;
-use worstinme\user\models\UpdateForm;
-use worstinme\user\models\SignupForm;
-use worstinme\user\models\LoginForm;
-use worstinme\user\models\User;
+use balitrip\user\models\PasswordResetRequestForm;
+use balitrip\user\models\ResetPasswordForm;
+use balitrip\user\models\ConfirmEmailForm;
+use balitrip\user\models\UserService;
+use balitrip\user\models\UpdateForm;
+use balitrip\user\models\SignupForm;
+use balitrip\user\models\LoginForm;
+use balitrip\user\models\User;
 
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -167,7 +167,7 @@ class DefaultController extends \yii\web\Controller
 
             Yii::$app->session->setFlash('success', Yii::t('user','REQUEST_EMAIL_CONFIRM_SUCCESS'));
 
-            Yii::$app->mailer->compose('@worstinme/user/mail/confirmEmail', ['user' => $user])
+            Yii::$app->mailer->compose('@balitrip/user/mail/confirmEmail', ['user' => $user])
                 ->setFrom([Yii::$app->params['adminEmail'] => Yii::$app->name])
                 ->setTo($user->email)
                 ->setSubject('Подтверждение регистрации ' . Yii::$app->name)

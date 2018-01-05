@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace worstinme\user;
+namespace balitrip\user;
 
 use yii\base\InvalidConfigException;
 use yii\base\Widget;

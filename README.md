@@ -4,8 +4,8 @@
 
 User Auth / DB-RBAC / AuthClient module stiled with Uikit Framework.
 
-[![Latest Stable Version](https://poser.pugx.org/worstinme/yii2-user/v/stable.png)](https://packagist.org/packages/worstinme/yii2-user)
-[![Total Downloads](https://poser.pugx.org/worstinme/yii2-user/downloads.png)](https://packagist.org/packages/worstinme/yii2-user)
+[![Latest Stable Version](https://poser.pugx.org/balitrip/yii2-user/v/stable.png)](https://packagist.org/packages/balitrip/yii2-user)
+[![Total Downloads](https://poser.pugx.org/balitrip/yii2-user/downloads.png)](https://packagist.org/packages/balitrip/yii2-user)
 
 Installation
 ------------
@@ -15,13 +15,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist worstinme/yii2-user
+php composer.phar require --prefer-dist balitrip/yii2-user
 ```
 
 or add
 
 ```
-"worstinme/yii2-user": "^1.0.0"
+"balitrip/yii2-user": "^1.0.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -32,17 +32,17 @@ Required configurations
 ```php
 'modules' => [
     'user' => [
-        'class' => 'worstinme\user\Module',
+        'class' => 'balitrip\user\Module',
     ],
     'useradmin' => [
-        'class' => 'worstinme\user\backend\Module',
+        'class' => 'balitrip\user\backend\Module',
     ],
     ....
  ],
 'components' => [
 	'user' => [
-        'class'=>'worstinme\user\User',
-        'identityClass' => 'worstinme\user\models\User',
+        'class'=>'balitrip\user\User',
+        'identityClass' => 'balitrip\user\models\User',
         'enableAutoLogin' => true,
         'loginUrl'=>['/user/default/login'],
     ],
@@ -82,5 +82,5 @@ $ yii migrate --migrationPath=@yii/rbac/migrations/
 Then, use migrations to create user tables & default user administrator:administrator with admin role(don't forget to change it's default password).
 
 ```
-$ yii migrate --migrationPath=@worstinme/user/migrations/
+$ yii migrate --migrationPath=@balitrip/user/migrations/
 ```

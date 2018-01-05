@@ -1,8 +1,8 @@
 <?php
 use yii\helpers\Html;
-use worstinme\uikit\ActiveForm;
-use worstinme\uikit\Captcha;
-use worstinme\user\AuthChoice;
+use balitrip\uikit\ActiveForm;
+use balitrip\uikit\Captcha;
+use balitrip\user\AuthChoice;
 
 $this->title = Yii::t('user', 'TITLE_SIGNUP');
 

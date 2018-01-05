@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\user\models;
+namespace balitrip\user\models;
 
 use yii\base\Model;
 use Yii;
@@ -71,7 +71,7 @@ class SignupForm extends Model
             $user->generateEmailConfirmToken();
 
             if ($user->save()) {
-                Yii::$app->mailer->compose('@worstinme/user/mail/confirmEmail', ['user' => $user])
+                Yii::$app->mailer->compose('@balitrip/user/mail/confirmEmail', ['user' => $user])
                     ->setFrom([Yii::$app->params['adminEmail'] => Yii::$app->name])
                     ->setTo($this->email)
                     ->setSubject('Подтверждение регистрации ' . Yii::$app->name)

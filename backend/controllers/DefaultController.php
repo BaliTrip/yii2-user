@@ -1,10 +1,10 @@
 <?php
 /**
- * @link https://github.com/worstinme/yii2-user
+ * @link https://github.com/balitrip/yii2-user
  * @copyright Copyright (c) 2014 Evgeny Zakirov
  * @license http://opensource.org/licenses/MIT MIT
  */
-namespace worstinme\user\backend\controllers;
+namespace balitrip\user\backend\controllers;
 
 use Yii;
 use yii\web\Controller;
@@ -15,7 +15,7 @@ use yii\rbac\Permission;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
 use yii\validators\RegularExpressionValidator;
-use worstinme\user\models\User;
+use balitrip\user\models\User;
 
 class DefaultController extends Controller
 {

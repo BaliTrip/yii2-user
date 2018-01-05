@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\user\models;
+namespace balitrip\user\models;
 
 use yii\base\Model;
 use Yii;
@@ -21,7 +21,7 @@ class PasswordResetRequestForm extends Model
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'exist',
-                'targetClass' => 'worstinme\user\models\User',
+                'targetClass' => 'balitrip\user\models\User',
                 //'filter' => ['status' => User::STATUS_ACTIVE],
                 'message' => 'There is no user with such email.'
             ],
@@ -60,7 +60,7 @@ class PasswordResetRequestForm extends Model
             }
 
             if ($user->save()) {
-                return \Yii::$app->mailer->compose('@worstinme/user/mail/passwordResetToken', ['user' => $user])
+                return \Yii::$app->mailer->compose('@balitrip/user/mail/passwordResetToken', ['user' => $user])
                     ->setFrom([Yii::$app->params['adminEmail'] => 'robot'])
                     ->setTo($this->email)
                     ->setSubject(Yii::t('user','EMAIL_TITLE_PASSWORD_RESET',['sitename'=>\Yii::$app->name]))

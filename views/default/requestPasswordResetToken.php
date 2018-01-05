@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Html;
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\ActiveForm;
 
 $this->title = Yii::t('user', 'TITLE_RESET_PASSWORD');
 $this->params['breadcrumbs'][] = $this->title;

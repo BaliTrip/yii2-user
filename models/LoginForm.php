@@ -1,8 +1,8 @@
 <?php
 
-namespace worstinme\user\models;
+namespace balitrip\user\models;
 
-use worstinme\user\models\User;
+use balitrip\user\models\User;
 use Yii;
 use yii\base\Model;
 

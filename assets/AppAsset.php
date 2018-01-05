@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace worstinme\user\assets;
+namespace balitrip\user\assets;
 
 use yii\web\AssetBundle;
 
@@ -23,7 +23,7 @@ class AppAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'worstinme\uikit\UikitAsset',
-        'worstinme\uikit\assets\Password',
+        'balitrip\uikit\UikitAsset',
+        'balitrip\uikit\assets\Password',
     ];
 }

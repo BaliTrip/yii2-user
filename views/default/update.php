@@ -1,8 +1,8 @@
 <?php
 
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\ActiveForm;
 use yii\helpers\Html;
-use worstinme\user\AuthChoice;
+use balitrip\user\AuthChoice;
 
 $this->title = Yii::t('user', 'TITLE_UPDATE');
 

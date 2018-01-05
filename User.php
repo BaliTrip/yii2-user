@@ -1,6 +1,6 @@
 <?php 
 
-namespace worstinme\user;
+namespace balitrip\user;
 
 use Yii;
 

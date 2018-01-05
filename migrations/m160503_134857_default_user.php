@@ -27,7 +27,7 @@ class m160503_134857_default_user extends Migration
             'username'=>'administrator',
             'password_hash'=>Yii::$app->security->generatePasswordHash('administrator'),
             'email'=>'admin@example.com',
-            'status'=>\worstinme\user\models\User::STATUS_ACTIVE,
+            'status'=>\balitrip\user\models\User::STATUS_ACTIVE,
         ]);
 
         $user_id = Yii::$app->db->getLastInsertID();
